@@ -30,11 +30,40 @@
             color: white;
             text-decoration: none;
         }
+        .hero {
+            background-image: url('your-image-url.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3em;
+        }
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
             background-color: white;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            margin-top: 0;
+        }
+        .button {
+            background-color: #4b0082;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
         }
         footer {
             background-color: #4b0082;
@@ -54,30 +83,56 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#prints">Prints</a></li>
+                <li><a href="#stickers">Stickers</a></li>
+                <li><a href="#donation">Donation</a></li>
+                <li><a href="#postcards">Postcards</a></li>
+                <li><a href="#magnets">Magnets</a></li>
             </ul>
         </nav>
     </header>
-    <div class="container" id="home">
-        <h2>Welcome to Lilac and Lunar</h2>
-        <p>This is a space where we blend the enchanting themes of lilacs and lunar elements, inspired by Alice in Wonderland, Ancient Greek and Egyptian mythology, and philosophy.</p>
+
+    <div class="hero" id="home">
+        <h1>Welcome to Lilac and Lunar</h1>
     </div>
-    <div class="container" id="about">
+
+    <div class="container section" id="about">
         <h2>About Us</h2>
         <p>Lilac and Lunar is a project that aims to convey the message of love through whimsical and mythological artwork. Our works are deeply influenced by classic literature and ancient mythology, creating a unique blend of old and new.</p>
     </div>
-    <div class="container" id="gallery">
-        <h2>Gallery</h2>
-        <p>Check out our latest works!</p>
-        <!-- Gallery items will go here -->
+
+    <div class="container section" id="prints">
+        <h2>Prints</h2>
+        <p>Discover our unique prints.</p>
+        <a href="prints.html" class="button">See More Prints</a>
     </div>
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <p>Feel free to reach out to us for inquiries or collaborations.</p>
+
+    <div class="container section" id="stickers">
+        <h2>Stickers</h2>
+        <p>Explore our collection of stickers.</p>
+        <a href="stickers.html" class="button">See More Stickers</a>
     </div>
+
+    <div class="container section" id="donation">
+        <h2>Donation</h2>
+        <p>20% of our profits are donated to Surfers Not Street Children. Your support helps us make a difference.</p>
+    </div>
+
+    <div class="container section" id="postcards">
+        <h2>Postcards</h2>
+        <p>Check out our beautiful postcards.</p>
+        <a href="postcards.html" class="button">See More Postcards</a>
+    </div>
+
+    <div class="container section" id="magnets">
+        <h2>Magnets</h2>
+        <p>Discover our magnet collection.</p>
+        <a href="magnets.html" class="button">See More Magnets</a>
+    </div>
+
     <footer>
         <p>&copy; 2024 Lilac and Lunar. All rights reserved.</p>
     </footer>
 </body>
 </html>
+
